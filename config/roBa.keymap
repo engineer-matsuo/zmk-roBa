@@ -60,12 +60,37 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        tog_on: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
+
+        tog_off: toggle_layer_off_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+            bindings = <
+&kp Q                            &kp W      &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&mt LEFT_GUI A                   &kp S      &kp D         &kp F                   &kp G        &kp ESC                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z                 &kp X      &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LC(UP_ARROW) LC(LEFT_ARROW)  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 6 LANG1  &lt 2 SPACE  &lt_to_layer_0 3 LANG2      &kp BACKSPACE  &lt 1 ENTER                             &mt LC(UP_ARROW) LC(RIGHT_ARROW)
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        win_layer {
             bindings = <
 &kp Q                            &kp W      &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &mt LEFT_GUI A                   &kp S      &kp D         &kp F                   &kp G        &kp ESC                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
