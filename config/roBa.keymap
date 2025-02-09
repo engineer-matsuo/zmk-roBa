@@ -39,7 +39,6 @@
         control-a {
             bindings = <&kp LG(A)>;
             key-positions = <10 11>;
-            layers = <0>;
         };
     };
 
