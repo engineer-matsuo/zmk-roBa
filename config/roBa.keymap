@@ -118,10 +118,10 @@
 
         win_layer {
             bindings = <
-&kp Q                            &kp W      &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&mt LEFT_GUI A                   &kp S      &kp D         &kp F                   &kp G        &kp ESC                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z                 &kp X      &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LC(UP_ARROW) LC(LEFT_ARROW)  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 7 LANG1  &lt 3 SPACE  &lt_to_layer_0 4 LANG2      &kp BACKSPACE  &lt 2 ENTER                             &mt LC(UP_ARROW) LC(RIGHT_ARROW)
+&kp Q                            &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 6 I    &kp O    &kp P
+&mt LCTRL A                      &kp S         &kp D         &kp F                   &kp G        &kp ESC                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z                 &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LC(UP_ARROW) LC(LEFT_ARROW)  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 LANG1  &lt 3 SPACE  &lt_to_layer_0 4 LANG2      &kp BACKSPACE  &lt 2 ENTER                             &mt LC(UP_ARROW) LC(RIGHT_ARROW)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
