@@ -64,8 +64,7 @@
                 <&tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
-                <&macro_wait_time 500>,
-                <&tog_on 0>;
+                <&macro_wait_time 500>;
 
             label = "BT0";
         };
@@ -74,7 +73,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0>,
+                <&tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
