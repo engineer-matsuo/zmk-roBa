@@ -49,7 +49,7 @@
         };
 
         command-shift-z {
-            bindings = <&kp LG(LS(Z))>;
+            bindings = <&mt LG(LEFT_SHIFT) Z>;
             key-positions = <10 5>;
             layers = <0>;
         };
